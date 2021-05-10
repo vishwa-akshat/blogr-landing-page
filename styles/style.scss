@@ -1,0 +1,155 @@
+//Variables
+$backgroundLight: hsla(13, 100%, 72%, 0.9);
+$backgroundDark: hsla(353, 100%, 62%, 0.9);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  // font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+#main {
+  background-image: linear-gradient(to right, $backgroundLight, $backgroundDark),
+    url("../images/bg-pattern-intro.svg");
+  background-size: 210%;
+  background-position: 24% 52%;
+  height: 75vh;
+  border-bottom-left-radius: 100px;
+  color: #ffffff;
+  text-align: center;
+
+  .navbar {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 12vw;
+
+    .links {
+      width: 20vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: -30%;
+    }
+
+    .signIn-button {
+      button {
+        border: none;
+        margin: 0 1vw;
+        font-size: 1.1vw;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .login {
+        background-color: transparent;
+        color: #ffffff;
+      }
+      .signUp {
+        padding: 1.7vh 2.5vw;
+        border-radius: 20px;
+        color: hsl(355, 100%, 74%);
+        transition: all 0.1s ease;
+
+        &:hover {
+          background-color: hsl(355, 100%, 74%);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  #main-body {
+    margin-top: 12vh;
+    h1 {
+      font-size: 4vw;
+    }
+    p {
+      font-size: 1.5vw;
+    }
+
+    .buttons {
+      margin-top: 5vh;
+      button {
+        font-weight: bold;
+        padding: 2vh 1.5vw;
+        margin: 0 15px;
+        border-radius: 30px;
+        font-size: 1.1vw;
+        cursor: pointer;
+      }
+      .start {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        color: hsl(355, 100%, 74%);
+
+        &:hover {
+          background-color: hsl(355, 100%, 74%);
+          border: 1px solid hsl(355, 100%, 74%);
+          color: #ffffff;
+        }
+      }
+      .learn {
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+
+        &:hover {
+          background-color: #ffffff;
+          border: 1px solid #ffffff;
+          color: hsl(355, 100%, 74%);
+        }
+      }
+    }
+  }
+}
+
+#design {
+  h1 {
+    color: hsl(208, 49%, 24%);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 95%;
+    font-size: 2.5vw;
+  }
+  .design-container {
+    display: flex;
+    width: 100vw;
+    margin-top: 7vh;
+
+    .left {
+      width: 56vw;
+      padding-top: 32vh;
+      padding-left: 10vw;
+      padding-right: 11vw;
+
+      h2 {
+        font-size: 1.8vw;
+        color: hsl(208, 49%, 24%);
+        margin-bottom: 4vh;
+      }
+      p {
+        color: hsl(207, 13%, 34%);
+        line-height: 2;
+        word-spacing: 4px;
+        margin-bottom: 10vh;
+      }
+    }
+    .right {
+      width: 44vw;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+}
+
+#main {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.9)), to(rgba(255, 61, 84, 0.9))), url("../images/bg-pattern-intro.svg");
+  background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../images/bg-pattern-intro.svg");
+  background-size: 210%;
+  background-position: 24% 52%;
+  height: 75vh;
+  border-bottom-left-radius: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#main .navbar {
+  font-family: "Ubuntu", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh 12vw;
+}
+
+#main .navbar .links {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -30%;
+}
+
+#main .navbar .signIn-button button {
+  border: none;
+  margin: 0 1vw;
+  font-size: 1.1vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#main .navbar .signIn-button .login {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#main .navbar .signIn-button .signUp {
+  padding: 1.7vh 2.5vw;
+  border-radius: 20px;
+  color: #ff7a85;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+#main .navbar .signIn-button .signUp:hover {
+  background-color: #ff7a85;
+  color: #ffffff;
+}
+
+#main #main-body {
+  margin-top: 12vh;
+}
+
+#main #main-body h1 {
+  font-size: 4vw;
+}
+
+#main #main-body p {
+  font-size: 1.5vw;
+}
+
+#main #main-body .buttons {
+  margin-top: 5vh;
+}
+
+#main #main-body .buttons button {
+  font-weight: bold;
+  padding: 2vh 1.5vw;
+  margin: 0 15px;
+  border-radius: 30px;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+#main #main-body .buttons .start {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #ff7a85;
+}
+
+#main #main-body .buttons .start:hover {
+  background-color: #ff7a85;
+  border: 1px solid #ff7a85;
+  color: #ffffff;
+}
+
+#main #main-body .buttons .learn {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#main #main-body .buttons .learn:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #ff7a85;
+}
+
+#design h1 {
+  color: #1f3f5b;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 95%;
+  font-size: 2.5vw;
+}
+
+#design .design-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin-top: 7vh;
+}
+
+#design .design-container .left {
+  width: 56vw;
+  padding-top: 32vh;
+  padding-left: 10vw;
+  padding-right: 11vw;
+}
+
+#design .design-container .left h2 {
+  font-size: 1.8vw;
+  color: #1f3f5b;
+  margin-bottom: 4vh;
+}
+
+#design .design-container .left p {
+  color: #4b5862;
+  line-height: 2;
+  word-spacing: 4px;
+  margin-bottom: 10vh;
+}
+
+#design .design-container .right {
+  width: 44vw;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
