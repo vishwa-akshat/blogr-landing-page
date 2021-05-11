@@ -20,35 +20,42 @@
         <img src="./images/logo.svg" alt="logo">
       </div>
       <div class="links">
-        <div class="product">
-          <p>Product</p>
-          <!-- <div class="active">
-            <p>Overview</p>
-            <p>Pricing</p>
-            <p>Marketplace</p>
-            <p>Features</p>
-            <p>Integrations</p>
-          </div> -->
+        <div class="link activeBtn">
+          <div class="product">
+            <p>Product</p>
+            <div class="menu">
+              <p>Overview</p>
+              <p>Pricing</p>
+              <p>Marketplace</p>
+              <p>Features</p>
+              <p>Integrations</p>
+            </div>
+          </div>
         </div>
 
-        <div class="company">
-          <p>Company</p>
-          <!-- <div class="active">
+        <div class="link">
+          <div class="company">
+            <p>Company</p>
+            <div class="menu">
               <p>About</p>
               <p>Team</p>
               <p>Blog</p>
-              <p>Careers</p> -->
-          <!-- </div> -->
+              <p>Careers</p>
+            </div>
+          </div>
         </div>
 
-        <div class="connect">
-          <p>Connect</p>
-          <!-- <div class="active">
+        <div class="link">
+          <div class="connect">
+            <p>Connect</p>
+            <div class="menu">
               <p>Contact</p>
               <p>Newsletter</p>
               <p>LinkedIn</p>
-            </div> -->
+            </div>
+          </div>
         </div>
+
       </div>
 
       <div class="signIn-buttons">
@@ -107,48 +114,97 @@
   </div>
 
 
+  <div id="infra">
+    <div class="infra-left">
+      <img src="./images/illustration-phones.svg" alt="">
+    </div>
+    <div class="infra-right">
+      <h1>
+        State of the Art Infrastructure
+      </h1>
+      <p>
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </div>
+  </div>
+
+  <div id="tool">
+    <div class="tool-left">
+      <!-- <img src="./images/illustration-laptop-desktop.svg" alt="laptop"> -->
+    </div>
+    <div class="tool-right">
+      <h2>
+        Free, open, simple
+      </h2>
+      <p>
+        Blogr is a free and open source application backed by a large community of helpful developers. It supports
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <h2>
+        Powerful tooling
+      </h2>
+      <p>
+        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+        breeze,
+        but
+        capable of producing even the most complicated sites.
+      </p>
+    </div>
+  </div>
 
 
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-  but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
+  <div id="footer">
+    <div class="footer-logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <div class="footer-product">
+      <h4>Product</h4>
+      <p>Overview</p>
+      <p>Pricing</p>
+      <p>Marketplace</p>
+      <p>Features</p>
+      <p>Integrations</p>
+    </div>
+    <div class="footer-company">
+      <h4>Company</h4>
+      <p>About</p>
+      <p>Team</p>
+      <p>Blog</p>
+      <p>Careers</p>
+    </div>
+    <div class="footer-connect">
+      <h4>Connect</h4>
+      <p>Contact</p>
+      <p>Newsletter</p>
+      <p>LinkedIn</p>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Akshat Vishwakarma</a>.
   </div>
+
+  <script>
+    let links = document.querySelectorAll('.link');
+    let toggle = false;
+    for (let i of links) {
+      i.addEventListener('click', (e) => {
+        let menu = i.firstChild.nextSibling.lastChild.previousSibling;
+        if (toggle) {
+          menu.classList.remove('active');
+          i.classList.remove('activeBtn');
+          toggle = false;
+        } else {
+          menu.classList.add('active');
+          i.classList.add('activeBtn');
+          toggle = true;
+        }
+      })
+    }
+  </script>
 </body>
 
 </html>
