@@ -42,7 +42,7 @@ body {
 
         &::after {
           content: url("../images/icon-arrow-light.svg");
-          margin-left: 5px;
+          margin-left: 0.2vw;
           transition: all 0.3s ease-in-out;
         }
         &.activeBtn::after {
@@ -80,8 +80,6 @@ body {
             }
           }
         }
-      }
-      .connect {
       }
     }
 
@@ -303,3 +301,5 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@import "mobileView";
